@@ -1,12 +1,16 @@
 import React from 'react'
+import lentes from '../assets/lentes.jpg'
 
 export default function Card(){
     return(
-        <div>
-            Esto es una tarjeta
-            <h1>Hola Mundo</h1>
-            <h2>Paul Torres Aguillon</h2>
-            <p>null</p>
+        <div className='card'>
+            <div className='card-body'>
+                <img src = {lentes} alt = 'Lentes'></img>
+                <h4 className='card-title'> My Title </h4>
+                <p className='card-text text-secondary'>
+                Contenido de la tarjeta
+                </p>
+            </div>
         </div>
     )
 }
